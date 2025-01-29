@@ -1,0 +1,317 @@
+body, .App {
+  text-align: center;
+  background-color: #e0c2fc;;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login, .Register {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 350px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.login h2, .Register h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+.login div, .Register div {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  background-color: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  width: 85%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  color: #333;
+}
+.login input:-webkit-autofill,
+.login input:-webkit-autofill:hover, 
+.login input:-webkit-autofill:focus, 
+.login input:-webkit-autofill:active,
+.Register input:-webkit-autofill,
+.Register input:-webkit-autofill:hover, 
+.Register input:-webkit-autofill:focus, 
+.Register input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  background-color: transparent !important;
+}
+input::placeholder {
+  color: #999;
+}
+
+#login-btn, #sign-up {
+  width: 100%;
+  height: 40px;
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+#login-btn:hover, #sign-up:hover {
+  background-color: #a855f7;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+p a {
+  color: #9333ea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.Register div svg, .login div svg {
+  color: #666;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  padding: 20px;
+  background-color: #e0c2fc;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  color:#9333ea;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.dashboard-header button{
+  all:unset;
+  border-radius: 20px;
+  background-color: #a855f7;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.dashboard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 2em;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.MonthlyCard, .TotalExpenses, .YearlyCard {
+  flex-basis: 35%;
+  height: 200px;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.MonthlyCard {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.TotalExpenses {
+  background: linear-gradient(135deg, #9333ea, #a855f7);
+}
+
+.YearlyCard {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+.dashboard-chart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2em;
+  width: 100%;
+  padding: 1em;
+}
+
+.monthly-chart, .expense-chart {
+  border-radius: 12px;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #ffffff;
+  width: 47%;
+  margin-left: 20px;
+}
+
+#expense_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+#expense_table th {
+  text-align: left;
+  padding: 0.5em;
+  background-color: #f1f5f9;
+}
+
+#expense_table td {
+  padding: 0.5em;
+}
+
+.Expenses {
+  padding: 1em;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+}
+
+input, select {
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.expense-form-add {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.expense-form-add:hover {
+  background-color: #2563eb;
+}
+
+.budget-container {
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  width: 450px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.budget-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 80%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  padding: 6px;
+  color: #333;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+  grid-column: span 2;
+}
+
+.submit-btn:hover {
+  background-color: #a855f7;
+}
