@@ -1,60 +1,108 @@
-React Expense Tracker 💸
 
-A React-based expense tracker application that allows users to manage and monitor their daily expenses. The application features login functionality, an interactive dashboard with budget summaries and charts, and the ability to add, update, and delete expenses. The app also provides a visual representation of monthly and yearly budget data through charts.
-Features 🎯
+# 💰 Expense Tracker
 
-    Login 🔑: Users can log in using their credentials to access their dashboard.
-    Dashboard 🏠:
-        Displays monthly, yearly, and total expense data.
-        Budget and expense charts (Bar chart for budget 📊, Pie chart for expenses 🍰).
-        Provides the option to create budgets 💰.
-    Expense Management 📈:
-        Add, edit, and delete expenses.
-        Expenses are categorized (e.g., Food 🍔, Medicine 💊, Transport 🚗, etc.).
-    Responsive Design 📱: The application is fully responsive and adapts to various screen sizes.
+The Expense Tracker is a web application designed to help users manage their monthly and yearly budgets, track expenses, and visualize their spending habits through charts and reports. 📊
 
-Technologies Used 🛠️
+---
 
-    React ⚛️: JavaScript library for building the user interface.
-    Blueprint.js: A UI toolkit for building web interfaces with modern design patterns.
-    Font Awesome: For icon usage (e.g., lock 🔒, user 👤).
-    CSS: For styling the application.
-    Fetch API 🌐: For handling HTTP requests and interacting with the backend.
-    React Router: For navigation between different views (Login, Dashboard, etc.).
-    PHP: Backend API for handling user authentication, budget management, and expense operations.
-    MySQL: Database for storing user data, expenses, and budgets.
+## ✨ Features
 
-Installation 📝
+- **🔐 User Authentication**: Login and Signup functionality.
+- **📊 Dashboard**: Displays monthly and yearly budgets, total expenses, and visual charts for budget and expense reports.
+- **💸 Expense Management**: Add, update, and delete expenses with details like category, amount, description, and date.
+- **📅 Budget Management**: Set monthly budgets for each month of the year.
+- **📈 Charts**: Visualize budget and expense data using bar charts.
 
-To get started with the project, follow the steps below:
+---
 
-    Clone this repository to your local machine:
+## 🛠️ Technologies Used
 
-git clone https://github.com/ganthantm65/expense-tracker.git
+- **Frontend**: React, BlueprintJS, FontAwesome
+- **Backend**: (Assumed to be a REST API, as indicated by the fetch calls)
+- **Routing**: React Router
+- **Charts**: Custom chart components (`BarChart`, `ExpenseChart`)
 
-Install the dependencies:
+---
 
-cd expense-tracker
-npm install
+## 🚀 Getting Started
 
-Start the development server:
+### Prerequisites
 
-    npm start
+- Node.js and npm installed on your machine.
+- A backend server running (if applicable).
 
-    Set up the backend API (PHP) as per your configuration, ensuring it is connected to a MySQL database.
+### Installation
 
-Usage 🚀
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/expense-tracker.git
+   cd expense-tracker
+   ```
 
-    Run the backend server and the React app.
-    Navigate to http://localhost:3000 to access the application in your browser.
-    Use the login page to access the dashboard and begin tracking your expenses.
-    Add, edit, and delete expenses and monitor the charts and budgets.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Contributing 🤝
+3. **Start the development server**:
+   ```bash
+   npm start
+   ```
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature/your-feature).
-    Make your changes.
-    Commit your changes (git commit -am 'Add new feature').
-    Push to the branch (git push origin feature/your-feature).
-    Create a new Pull Request.
+4. **Open your browser** and navigate to `http://localhost:3000`.
+
+---
+
+## 🖥️ Usage
+
+1. **Login**:
+   - Enter your username and password to log in.
+   - If you don't have an account, click on **Sign up**.
+
+2. **Dashboard**:
+   - View your monthly and yearly budgets.
+   - Check your total expenses.
+   - Explore visual charts for budget and expense reports.
+
+3. **Manage Expenses**:
+   - Add new expenses with details like category, amount, description, and date.
+   - Update or delete existing expenses.
+
+4. **Set Budgets**:
+   - Navigate to the **Budgets** page to set monthly budgets for each month.
+
+---
+
+## 📂 Project Structure
+
+```
+expense-tracker/
+├── src/
+│   ├── components/
+│   │   ├── Login.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Expenses.jsx
+│   │   ├── Budget.jsx
+│   │   ├── chart/
+│   │   │   ├── MonthlyChart.jsx
+│   │   │   ├── ExpenseChart.jsx
+│   ├── App.css
+│   ├── App.js
+│   ├── index.js
+├── README.md
+├── package.json
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeatureName`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeatureName`).
+5. Open a pull request.
+
+---
