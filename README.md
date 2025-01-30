@@ -30,7 +30,7 @@ To get started with the project, follow the steps below:
 
     Clone this repository to your local machine:
 
-git clone https://github.com/yourusername/expense-tracker.git
+git clone https://github.com/ganthantm65/expense-tracker.git
 
 Install the dependencies:
 
